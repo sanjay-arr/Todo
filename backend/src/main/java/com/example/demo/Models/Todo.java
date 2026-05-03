@@ -25,6 +25,7 @@ public class Todo {
     @Schema(name="title",example = "completed spring boot")
     private String title;
 
+    @com.fasterxml.jackson.annotation.JsonProperty("is_completed")
     private Boolean is_completed;
 
 }
